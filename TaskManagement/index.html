@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task-manager-container">
+        <form id="taskForm" class="task-form">
+            <h2>My Task Manager</h2>
+            <label for="taskName">New Task:</label>
+            <input type="text" id="taskName" name="taskName" required>
+            <button onclick="addTask(event)">Add</button>
+        </form>
+        <div class="logout">
+            <a href="login.html" onclick="logout()">Log out</a>
+        </div>
+        <div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
